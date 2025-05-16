@@ -1,5 +1,5 @@
 {
-  "name": "Kaspi ID Demo",
+  "name": "Kaspi ID (учебный)",
   "short_name": "Kaspi ID",
   "start_url": ".",
   "display": "standalone",
@@ -7,8 +7,8 @@
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "icon.png",
-      "sizes": "192x192",
+      "src": "icon-512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
