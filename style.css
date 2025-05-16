@@ -57,36 +57,40 @@ h1 {
 
 .photo {
   width: 100%;
+  max-width: 500px; /* ограничим максимальный размер */
   border-radius: 12px;
+  margin: 0 auto;
+  display: block;
 }
+
 
 .actions {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  margin: 30px 20px 60px;
+  gap: 15px;
+  margin-bottom: 40px;
 }
 
 .primary,
 .secondary {
-  width: 100%;
-  max-width: 400px;
-  padding: 16px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 16px 0;
   font-size: 16px;
-  border-radius: 12px;
   font-weight: bold;
-  border: none;
-  box-sizing: border-box;
+  border-radius: 12px;
 }
 
 .primary {
   background-color: #007bff;
   color: white;
+  border: none;
 }
 
 .secondary {
-  background-color: white;
-  border: 2px solid #d5dfeb;
-  color: #d5dfeb;
+  background: none;
+  border: 2px solid #007bff;
+  color: #007bff;
 }
