@@ -22,8 +22,9 @@ h1 {
   justify-content: center;
   background-color: #f1f1f1;
   border-radius: 10px;
-  padding: 4px;
-  margin: 0 20px 15px;
+  padding: 2px;           /* уменьшил внутренние отступы сверху и снизу */
+  margin: 0 20px 10px;    /* уменьшил внешний отступ снизу */
+  height: 38px;           /* фиксированная высота, если нужно ещё меньше */
 }
 
 .tab {
@@ -49,7 +50,6 @@ h1 {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  max-height: 500px;
 }
 
 .photo {
