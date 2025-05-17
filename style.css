@@ -62,12 +62,17 @@ h1 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center; /* центрируем, но кнопки будут шире */
   padding: 0 20px;
   box-sizing: border-box;
   margin-top: 15px;
   gap: 10px;
   margin-bottom: 40px;
+}
+
+.primary, .secondary {
+  width: 100%; /* на всю ширину родителя */
+  max-width: 1000px; /* можно увеличить до 440px если хочешь больше */
 }
 
 .primary {
