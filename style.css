@@ -49,6 +49,7 @@ h1 {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  max-height: 500px;
 }
 
 .photo {
