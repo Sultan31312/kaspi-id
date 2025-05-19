@@ -58,6 +58,7 @@ h1 {
   height: auto;
   display: block;
   border-radius: 0;
+  margin-bottom: -40px;
 }
 
 .actions {
