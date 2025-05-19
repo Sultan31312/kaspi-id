@@ -120,9 +120,14 @@ h1 {
 }
 
 .back-button img {
-  height: 32px; /* или 36px, если хочешь крупнее */
-  width: 32px;
+  height: 100px;
+  width: 100px;
   object-fit: contain;
   filter: brightness(0);
+}
+
+.back-icon {
+  width: 32px;
+  height: 32px;
 }
 
