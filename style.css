@@ -140,3 +140,8 @@ h1 {
   height: 32px;
 }
 
+.label {
+  font-size: 13px;
+  color: #888;
+  font-weight: 500;
+}
