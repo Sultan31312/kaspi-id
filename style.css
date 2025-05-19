@@ -108,18 +108,21 @@ h1 {
   margin: 0;
   position: absolute;
   left: 15px;
-  top: 12px;
+  top: 21px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 24px;
-  width: 24px;
+
+  /* УБРАТЬ ЭТИ строки: */
+  /* height: 24px; */
+  /* width: 24px; */
 }
 
 .back-button img {
-  height: 24px; /* увеличь при необходимости, например 32px */
-  width: 24px;
+  height: 32px; /* или 36px, если хочешь крупнее */
+  width: 32px;
   object-fit: contain;
-  filter: brightness(0); /* делает иконку черной */
+  filter: brightness(0);
 }
+
