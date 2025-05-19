@@ -118,7 +118,8 @@ h1 {
 }
 
 .back-button img {
-  height: 18px; /* или 24px в зависимости от размера иконки */
-  width: auto;
-  display: block;
+  height: 24px; /* увеличь при необходимости, например 32px */
+  width: 24px;
+  object-fit: contain;
+  filter: brightness(0); /* делает иконку черной */
 }
