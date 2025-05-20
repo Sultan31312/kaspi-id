@@ -60,46 +60,46 @@ header h1 {
 
 .tab.active {
   color: #000;
+  border-bottom: 2px solid #2b6bcc;
 }
 
 .carousel-container {
-  position: relative;
-  width: 100%;
   max-width: 320px;
   margin: 20px auto;
-  overflow: visible;
-  background: #fff;
-  padding-bottom: 40px;
+  position: relative;
 }
 
 .carousel {
   display: flex;
-  overflow-x: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
-  padding: 0 40px;
-  user-select: none;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* скрываем скроллбар */
 }
 
 .carousel img {
-  flex: 0 0 60%;
-  max-width: 60%;
-  margin: 0 10px;
+  flex: 0 0 70%;
+  max-width: 70%;
   border-radius: 10px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  scroll-snap-align: center;
   cursor: pointer;
-  opacity: 0.7;
+  user-select: none;
+  transition: transform 0.3s ease;
 }
 
 .carousel img.active {
   transform: scale(1.1);
-  opacity: 1;
 }
 
 .dots {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
   text-align: center;
+  margin-top: 10px;
 }
 
 .dots .dot {
@@ -114,7 +114,7 @@ header h1 {
 }
 
 .dots .dot.active {
-  background-color: #555;
+  background-color: #2b6bcc;
 }
 
 .bottom-bar {
