@@ -89,6 +89,9 @@ h1 {
   margin-top: 15px;
   gap: 10px;
   margin-bottom: 40px;
+  background: white; /* чтобы перекрыть нижнюю часть изображения */
+  border-top: 1px solid #e2e2e2;
+  padding-top: 20px;
 }
 
 .primary,
