@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Цифровые документы</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
 </head>
 <body>
-<header>
-  <button class="back-button">
-    <svg class="back-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <polyline points="15 18 9 12 15 6" />
-    </svg>
-  </button>
-  <h1>Цифровые документы</h1>
-</header>
-
+  <header>
+    <button class="back-button" aria-label="Назад">
+      <svg
+        class="back-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+    </button>
+    <h1>Цифровые документы</h1>
+  </header>
 
   <div class="top-tabs">
     <div class="tab active">Мои документы</div>
@@ -25,11 +33,8 @@
   </div>
 
   <div class="carousel-container">
-    <div class="carousel">
-      <img src="id.jpeg" alt="Удостоверение личности">
-      <img src="passport.jpeg" alt="Паспорт">
-      <img src="driver.jpeg" alt="Водительские права">
-    </div>
+    <div class="carousel"></div>
+    <div class="dots"></div>
   </div>
 
   <div class="bottom-bar">
@@ -38,36 +43,10 @@
   </div>
 
   <div class="no-docs">Нет других документов</div>
-  <hr>
+  <hr />
   <div class="help">Помощь</div>
 
-  <script>
-    const carousel = document.querySelector('.carousel');
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-
-    carousel.addEventListener('mousedown', e => {
-      isDown = true;
-      startX = e.pageX - carousel.offsetLeft;
-      scrollLeft = carousel.scrollLeft;
-    });
-
-    carousel.addEventListener('mouseleave', () => {
-      isDown = false;
-    });
-
-    carousel.addEventListener('mouseup', () => {
-      isDown = false;
-    });
-
-    carousel.addEventListener('mousemove', e => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - carousel.offsetLeft;
-      const walk = (x - startX) * 2;
-      carousel.scrollLeft = scrollLeft - walk;
-    });
-  </script>
+  <!-- Подключаем внешний JS -->
+  <script src="script.js"></script>
 </body>
 </html>
