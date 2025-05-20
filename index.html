@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <title>Цифровые документы</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaspi ID (учебный)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon-512.png">
 </head>
 <body>
   <header>
-    <button class="back-button" aria-label="Назад">
-      <svg
-        class="back-icon"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <polyline points="15 18 9 12 15 6" />
-      </svg>
+    <button class="back-button">
+      <img src="back.jpeg" alt="Назад">
     </button>
-    <h1>Цифровые документы</h1>
+    <h1>Удостоверение личности</h1>
   </header>
 
-  <div class="top-tabs">
-    <div class="tab active">Мои документы</div>
-    <div class="tab">Семья</div>
-    <div class="tab">Другие документы</div>
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('document')">Документ</button>
+    <button class="tab" onclick="switchTab('requisites')">Реквизиты</button>
   </div>
 
-  <div class="carousel-container">
-    <div class="carousel"></div>
-    <div class="dots"></div>
+  <div id="document" class="card">
+    <img src="udost.jpeg" alt="Фото" class="photo">
+    <div class="qr-code"></div>
+    <div class="actions">
+      <button class="primary">Предъявить документ</button>
+      <button class="secondary">Отправить документ</button>
+    </div>
   </div>
 
-  <div class="bottom-bar">
-    <div>Обновить документы</div>
-    <div>Настройки</div>
+  <div id="requisites" class="card" style="display: none;">
+    <div class="photo" style="padding: 30px; font-size: 16px;">
+      <strong>Kaspi Gold:</strong><br>
+      4400 4301 2345 678921123<br><br>
+      <strong>Kaspi Red:</strong><br>
+      4400 4301 9876 5432
+    </div>
   </div>
 
-  <div class="no-docs">Нет других документов</div>
-  <hr />
-  <div class="help">Помощь</div>
-
-  <script src="script.js"></script>
+  <script>
+    function switchTab(tab) {
+      document.querySelectorAll('.tab').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.card').forEach(card => card.style.display = 'none');
+      document.querySelector(`[onclick*="${tab}"]`).classList.add('active');
+      document.getElementById(tab).style.display = 'block';
+    }
+  </script>
 </body>
 </html>

@@ -1,14 +1,20 @@
 {
-  "name": "Цифровые документы",
-  "short_name": "Документы",
+  "name": "Kaspi ID (учебный)",
+  "short_name": "Kaspi ID",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#f4f6f9",
-  "theme_color": "#1f72ea",
+  "background_color": "#ffffff",
+  "theme_color": "#1b6ae9",
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "icon-192.png",
       "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
