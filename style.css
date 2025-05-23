@@ -84,14 +84,16 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 20px 40px; /* 👈 добавили padding-top вместо margin-top */
+  padding: 25px 20px 40px;  /* 👈 чуть увеличим верхний padding */
   box-sizing: border-box;
   background: white;
   gap: 10px;
   position: relative;
   z-index: 2;
   border-top: 1px solid #e2e2e2;
+  margin-top: -40px; /* 👈 поднимаем блок выше */
 }
+
 
 
 .primary,
