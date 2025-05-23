@@ -84,15 +84,15 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px 20px 40px; /* 👈 добавили padding-top вместо margin-top */
   box-sizing: border-box;
-  margin-top: -30px;
+  background: white;
   gap: 10px;
-  margin-bottom: 40px;
-  background: white; /* чтобы перекрыть нижнюю часть изображения */
+  position: relative;
+  z-index: 2;
   border-top: 1px solid #e2e2e2;
-  padding-top: 20px;
 }
+
 
 .primary,
 .secondary {
@@ -120,7 +120,7 @@ h1 {
   background: none;
   border: 2px solid #94bfec;
   color: #0b6ed8;
-  padding: 13px;
+  padding: 1px;
   border-radius: 12px;
   font-size: 16px;
   font-weight: bold;
