@@ -103,7 +103,7 @@ h1 {
 }
 
 .primary {
-  background-color: #1b6ae9;
+  background-color: #00419c;
   color: white;
   border: none;
   padding: 15px;
@@ -148,4 +148,10 @@ h1 {
   width: 28px;
   height: 28px;
   stroke: rgb(0, 0, 0);
+}
+
+.button-icon {
+  width: 22px;
+  height: 29px;
+  object-fit: contain;
 }
