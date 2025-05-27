@@ -91,7 +91,7 @@ h1 {
   position: relative;
   z-index: 2;
   border-top: 1px solid #e2e2e2;
-  margin-top: -32px; /* 👈 поднимаем блок выше */
+  margin-top: -33px; /* 👈 поднимаем блок выше */
 }
 
 
@@ -122,7 +122,7 @@ h1 {
   background: none;
   border: 2px solid #94bfec;
   color: #0b6ed8;
-  padding: 14px;
+  padding: 15px;
   border-radius: 12px;
   font-size: 16px;
   font-weight: bold;
