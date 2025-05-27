@@ -87,7 +87,7 @@ h1 {
   padding: 25px 20px 40px;  /* 👈 чуть увеличим верхний padding */
   box-sizing: border-box;
   background: white;
-  gap: 10px;
+  gap: 13px;
   position: relative;
   z-index: 2;
   border-top: 1px solid #e2e2e2;
@@ -106,7 +106,7 @@ h1 {
   background-color: #296cca;
   color: white;
   border: none;
-  padding: 14px;
+  padding: 12px;
   border-radius: 12px;
   font-size: 18px;
   font-weight: bold;
