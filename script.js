@@ -1,13 +1,16 @@
+// Открытие QR-модального окна
 document.querySelector('.primary').addEventListener('click', () => {
   document.getElementById('qrModal').style.display = 'block';
 });
 
+// Закрытие QR-модального окна
 function closeModal() {
   document.getElementById('qrModal').style.display = 'none';
 }
 
+// Нажатие "Отправить документ" — делимся PDF или открываем его
 document.querySelector('.secondary').addEventListener('click', async () => {
-  const pdfUrl = 'document.pdf'; // Имя файла — он должен быть рядом с HTML
+  const pdfUrl = 'document.pdf'; // Имя файла — должен быть рядом с HTML
   const pdfName = 'Удостоверение.pdf';
 
   try {
@@ -22,7 +25,7 @@ document.querySelector('.secondary').addEventListener('click', async () => {
         files: [file],
       });
     } else {
-      // fallback — откроем просто сам PDF в новой вкладке
+      // fallback — просто откроем PDF
       window.open(pdfUrl, '_blank');
     }
   } catch (err) {
@@ -30,4 +33,3 @@ document.querySelector('.secondary').addEventListener('click', async () => {
     console.error(err);
   }
 });
-
