@@ -219,26 +219,3 @@ h1 {
   font-size: 24px;
   cursor: pointer;
 }
-
-.card {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  position: absolute;
-  width: 100%;
-  top: 100px; /* немного ниже заголовка */
-  left: 0;
-  opacity: 0;
-  transform: translateX(100%);
-  z-index: 0;
-}
-
-.card.active {
-  opacity: 1;
-  transform: translateX(0%);
-  z-index: 1;
-  position: relative;
-}
-
-#document.active ~ #requisites,
-#requisites.active ~ #document {
-  z-index: 0;
-}
