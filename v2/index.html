@@ -8,72 +8,12 @@
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="apple-touch-icon" href="icon-512.png" />
-  <style>
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background: rgba(0,0,0,0.5);
-    }
-
-    .modal-content {
-      background: white;
-      margin: 15% auto;
-      padding: 25px 20px;
-      border-radius: 12px;
-      width: 90%;
-      max-width: 350px;
-      text-align: center;
-      font-family: sans-serif;
-      position: relative;
-    }
-
-    .modal-content h2 {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      text-align: left;
-    }
-
-    .modal-content .qr-img {
-      width: 160px;
-      height: 160px;
-      margin: 10px 0;
-    }
-
-    .modal-content .code {
-      font-size: 24px;
-      font-weight: bold;
-      color: #000;
-    }
-
-    .close {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      font-size: 24px;
-      cursor: pointer;
-    }
-  </style>
 </head>
 <body>
 <header>
   <button class="back-button">
-    <svg
-      class="back-icon"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="black"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    >
+    <svg class="back-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+         fill="none" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
       <polyline points="15 18 9 12 15 6" />
     </svg>
   </button>
@@ -89,14 +29,14 @@
   <img src="udost.jpeg" alt="Фото" class="photo" />
   <div class="qr-code"></div>
   <div class="actions">
-      <button class="primary">
-        <img src="qr-icon.jpeg" alt="QR" class="button-icon" />
-        Предъявить документ
-      </button>
-      <button class="secondary">
-        <img src="send-icon.jpeg" class="icon" alt="" />
-        Отправить документ
-      </button>
+    <button class="primary">
+      <img src="qr-icon.jpeg" alt="QR" class="button-icon" />
+      Предъявить документ
+    </button>
+    <button class="secondary">
+      <img src="send-icon.jpeg" class="icon" alt="" />
+      Отправить документ
+    </button>
   </div>
 </div>
 
@@ -104,19 +44,14 @@
   <div class="photo" style="padding: 30px; font-size: 16px;">
     <span class="label">ФИО</span><br />
     Медресов Султан Мейрамович<br /><br />
-
     <span class="label">ИИН</span><br />
     020131500086<br /><br />
-
     <span class="label">Дата рождения</span><br />
     31.01.2002<br /><br />
-
     <span class="label">Номер документа</span><br />
     052991724<br /><br />
-
     <span class="label">Дата выдачи</span><br />
     03.06.2022<br /><br />
-
     <span class="label">Срок действия</span><br />
     02.06.2032<br />
   </div>
@@ -128,8 +63,8 @@
     <span class="close" onclick="closeModal()">×</span>
     <h2>Удостоверение личности</h2>
     <p>Покажите QR-код сотруднику</p>
-    <img src="qr_478341.png" alt="QR-код" class="qr-img" />
-    <p style="margin-top: 20px;">или скажите код</p>
+    <img src="qr_4783412.png" alt="QR-код" class="qr-img" />
+    <p style="margin-top: -20px; margin-bottom: 4px;">или скажите код</p>
     <div class="code">478341</div>
   </div>
 </div>
@@ -150,5 +85,9 @@
     document.getElementById('qrModal').style.display = 'none';
   }
 </script>
+
+<!-- ВОТ ЭТО -->
+<script src="script.js"></script>
 </body>
 </html>
+
