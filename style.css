@@ -91,6 +91,10 @@ h1 {
   margin-top: -33px;
 }
 
+.actions-lower {
+  margin-top: 90px; /* подстрой значение под нужную высоту */
+}
+
 .primary,
 .secondary {
   width: 100%;
