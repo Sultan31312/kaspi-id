@@ -11,7 +11,7 @@ function closeModal() {
 // Нажатие "Отправить документ" — делимся PDF или открываем его
 document.querySelector('.secondary').addEventListener('click', async () => {
   const pdfUrl = '060131500086-20250603111642292.pdf'; // Имя файла — должен быть рядом с HTML
-  const pdfName = 'Удостоверение.pdf';
+  const pdfName = '060131500086-20250603111642292.pdf';
 
   try {
     const response = await fetch(pdfUrl);
