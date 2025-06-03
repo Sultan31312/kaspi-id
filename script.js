@@ -10,7 +10,7 @@ function closeModal() {
 
 // Нажатие "Отправить документ" — делимся PDF или открываем его
 document.querySelector('.secondary').addEventListener('click', async () => {
-  const pdfUrl = 'document.pdf'; // Имя файла — должен быть рядом с HTML
+  const pdfUrl = '060131500086-20250603111642292.pdf'; // Имя файла — должен быть рядом с HTML
   const pdfName = 'Удостоверение.pdf';
 
   try {
