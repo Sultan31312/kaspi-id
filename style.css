@@ -24,7 +24,6 @@ h1 {
 }
 
 .tabs {
-  position: relative;
   display: flex;
   justify-content: center;
   background-color: #f1f1f1;
@@ -32,20 +31,6 @@ h1 {
   padding: 2px;
   margin: 0 20px 10px;
   height: 30px;
-  overflow: hidden;
-}
-
-/* Двигающийся индикатор */
-.tab-indicator {
-  position: absolute;
-  top: 2px;
-  bottom: 2px;
-  width: 50%;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  z-index: 0;
 }
 
 .tab {
