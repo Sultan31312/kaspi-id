@@ -25,36 +25,47 @@
   <button class="tab" onclick="switchTab('requisites')">Реквизиты</button>
 </div>
 
-<div id="document" class="card">
-  <img src="udost.jpeg" alt="Фото" class="photo" />
-  <div class="qr-code"></div>
-  <div class="actions">
-    <button class="primary">
-      <img src="qr-icon.jpeg" alt="QR" class="button-icon" />
-      Предъявить документ
-    </button>
-    <button class="secondary">
-      <img src="send-icon.jpeg" class="icon" alt="" />
-      Отправить документ
-    </button>
+<div class="card-wrapper">
+  <div id="document" class="card">
+    <img src="udost.jpeg" alt="Фото" class="photo" />
+    <div class="qr-code"></div>
+    <div class="actions">
+      <button class="primary">
+        <img src="qr-icon.jpeg" alt="QR" class="button-icon" />
+        Предъявить документ
+      </button>
+      <button class="secondary">
+        <img src="send-icon.jpeg" class="icon" alt="" />
+        Отправить документ
+      </button>
+    </div>
+  </div>
+
+  <div id="requisites" class="card" style="display: none;">
+    <div class="photo" style="padding: 30px; font-size: 16px;">
+      <span class="label">ФИО</span><br />
+      Медресов Султан Мейрамович<br /><br />
+      <span class="label">ИИН</span><br />
+      020131500086<br /><br />
+      <span class="label">Дата рождения</span><br />
+      31.01.2002<br /><br />
+      <span class="label">Номер документа</span><br />
+      052991724<br /><br />
+      <span class="label">Дата выдачи</span><br />
+      03.06.2022<br /><br />
+      <span class="label">Срок действия</span><br />
+      02.06.2032<br />
+    </div>
+    <div style="height: 300px;"></div> <!-- высота подгоняется под udost.jpeg -->
+    <div class="actions">
+      <button class="secondary">
+        <img src="send-icon.jpeg" class="icon" alt="" />
+        Отправить документ
+      </button>
+    </div>
   </div>
 </div>
 
-<div id="requisites" class="card" style="display: none;">
-  <div class="photo" style="padding: 30px; font-size: 16px;">
-    <span class="label">ФИО</span><br />
-    Медресов Султан Мейрамович<br /><br />
-    <span class="label">ИИН</span><br />
-    020131500086<br /><br />
-    <span class="label">Дата рождения</span><br />
-    31.01.2002<br /><br />
-    <span class="label">Номер документа</span><br />
-    052991724<br /><br />
-    <span class="label">Дата выдачи</span><br />
-    03.06.2022<br /><br />
-    <span class="label">Срок действия</span><br />
-    02.06.2032<br />
-  </div>
 
   <div class="actions">
     <button class="secondary">
