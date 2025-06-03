@@ -55,6 +55,16 @@
     <span class="label">Срок действия</span><br />
     02.06.2032<br />
   </div>
+  <div class="actions">
+    <button class="primary">
+      <img src="qr-icon.jpeg" alt="QR" class="button-icon" />
+      Предъявить документ
+    </button>
+    <button class="secondary">
+      <img src="send-icon.jpeg" class="icon" alt="" />
+      Отправить документ
+    </button>
+  </div>
 </div>
 
 <!-- Модальное окно с QR -->
@@ -77,8 +87,11 @@
     document.getElementById(tab).style.display = 'block';
   }
 
-  document.querySelector('.primary').addEventListener('click', () => {
-    document.getElementById('qrModal').style.display = 'block';
+  // Все кнопки "Предъявить документ"
+  document.querySelectorAll('.primary').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.getElementById('qrModal').style.display = 'block';
+    });
   });
 
   function closeModal() {
@@ -86,8 +99,11 @@
   }
 </script>
 
-<!-- ВОТ ЭТО -->
 <script src="script.js"></script>
 </body>
 </html>
 
+
+<!-- git add .
+git commit -m "Обновление дизайна"
+git push -->
