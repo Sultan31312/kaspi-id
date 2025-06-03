@@ -29,7 +29,7 @@ document.querySelector('.secondary').addEventListener('click', async () => {
       window.open(pdfUrl, '_blank');
     }
   } catch (err) {
-    alert('Не удалось поделиться файлом');
-    console.error(err);
+    // alert('Не удалось поделиться файлом'); // убрали уведомление
+    console.error(err); // можно оставить для разработчика
   }
 });
